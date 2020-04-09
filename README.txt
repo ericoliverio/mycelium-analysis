@@ -9,6 +9,9 @@ Imports All_Radius_Values.csv data from Data folder
 
 Uses imported data to form Gaussian Mixture Model and Bayesian Inference Criteria figures.
 
+- GMM fit will terminate if more than 750 iterations are reached without convergence. If so, the model uses the last number of components which converged.
+- Due to the skewed nature of the distribution, the number of components is set to always be >1. 
+
 Returns A_d
 
 * Edit A_d before running d_vs_mu *  
